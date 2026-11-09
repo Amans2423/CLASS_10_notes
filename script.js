@@ -5,29 +5,29 @@
 */
 const documentationChapters = [
   {title:"Advanced Features of Writer", subtitle:"Digital Documentation • LibreOffice Writer", files:[
-    {label:"Detailed Notes", fileName:"Advanced Features of Writer - Complete Theory & Exam Notes.pdf"},
-    {label:"Quick Revision", fileName:"Advanced_Features_Notebook_quick revision.pdf"}]},
+    {label:"Detailed Notes", fileName:"DIGITAL DOCUMENTATION - LIBREOFFICE WRITER/Advanced Features of Writer - Complete Theory & Exam Notes.pdf"},
+    {label:"Quick Revision", fileName:"DIGITAL DOCUMENTATION - QUICK REVISION/Advanced_Features_Notebook_quick revision.pdf"}]},
   {title:"Introduction to Styles", subtitle:"Digital Documentation • LibreOffice Writer", files:[
-    {label:"Detailed Notes", fileName:"Introduction_to_Styles_Complete_Theory_Exam_Notes.pdf"},
-    {label:"Quick Revision", fileName:"INTRO TO STYLES - QUICK REVISION.pdf"}]},
+    {label:"Detailed Notes", fileName:"DIGITAL DOCUMENTATION - LIBREOFFICE WRITER/Introduction_to_Styles_Complete_Theory_Exam_Notes.pdf"},
+    {label:"Quick Revision", fileName:"DIGITAL DOCUMENTATION - QUICK REVISION/INTRO TO STYLES - QUICK REVISION.pdf"}]},
   {title:"Working with Images", subtitle:"Digital Documentation • LibreOffice Writer", files:[
-    {label:"Detailed Notes", fileName:"Working with Images - Complete Theory & Exam Notes.pdf"},
-    {label:"Quick Revision", fileName:"Working_With_Images_quick revision.pdf"}]}
+    {label:"Detailed Notes", fileName:"DIGITAL DOCUMENTATION - LIBREOFFICE WRITER/Working with Images - Complete Theory & Exam Notes.pdf"},
+    {label:"Quick Revision", fileName:"DIGITAL DOCUMENTATION - QUICK REVISION/Working_With_Images_quick revision.pdf"}]}
 ];
 
 const spreadsheetChapters = [
   {title:"Analyse Data Using Scenarios and Goal Seek", subtitle:"Electronic Spreadsheet • LibreOffice Calc", files:[
-    {label:"Detailed Notes", fileName:"ANALYSE DATA WITH SCENARIOS AND GOAL SEEK.pdf"},
-    {label:"Quick Revision", fileName:"Analyse_Data_using Scenario and goal seek- quick revision.pdf"}]},
+    {label:"Detailed Notes", fileName:"ELECTRONIC SPREADSHEET - LIBREOFFICE CALC/ANALYSE DATA WITH SCENARIOS AND GOAL SEEK.pdf"},
+    {label:"Quick Revision", fileName:"ELECTRONIC SPREADSHEET - QUICK REVISION/Analyse_Data_using Scenario and goal seek- quick revision.pdf"}]},
   {title:"Linking Spreadsheet Data", subtitle:"Electronic Spreadsheet • LibreOffice Calc", files:[
-    {label:"Detailed Notes", fileName:"Linking_Spreadsheet_Data_Detailed_Notes.pdf"},
-    {label:"Quick Revision", fileName:"Linking_Spreadsheet_Data.pdf"}]},
+    {label:"Detailed Notes", fileName:"ELECTRONIC SPREADSHEET - LIBREOFFICE CALC/Linking_Spreadsheet_Data_Detailed_Notes.pdf"},
+    {label:"Quick Revision", fileName:"ELECTRONIC SPREADSHEET - QUICK REVISION/Linking_Spreadsheet_Data.pdf"}]},
   {title:"Macros", subtitle:"Electronic Spreadsheet • LibreOffice Calc", files:[
-    {label:"Detailed Notes", fileName:"Macros.pdf"},
-    {label:"Quick Revision", fileName:"Macrosqr.pdf"}]},
+    {label:"Detailed Notes", fileName:"ELECTRONIC SPREADSHEET - LIBREOFFICE CALC/Macros.pdf"},
+    {label:"Quick Revision", fileName:"ELECTRONIC SPREADSHEET - QUICK REVISION/Macrosqr.pdf"}]},
   {title:"Share and Review a Spreadsheet", subtitle:"Electronic Spreadsheet • LibreOffice Calc", files:[
-    {label:"Detailed Notes", fileName:"share and review a spreadsheet.pdf"},
-    {label:"Quick Revision", fileName:"Share_and_Review a spreadsheet.pdf"}]}
+    {label:"Detailed Notes", fileName:"ELECTRONIC SPREADSHEET - LIBREOFFICE CALC/share and review a spreadsheet.pdf"},
+    {label:"Quick Revision", fileName:"ELECTRONIC SPREADSHEET - QUICK REVISION/Share_and_Review a spreadsheet.pdf"}]}
 ];
 
 function urlFor(fileName) {
