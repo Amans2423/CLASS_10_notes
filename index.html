@@ -1,308 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Class 10 IT – Skills Quiz</title>
-<style>
-  *{box-sizing:border-box}
-  body{
-    margin:0;
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f4f7fb;
-    color:#1f2937;
-    line-height:1.5;
-  }
-  .wrap{max-width:900px;margin:0 auto;padding:18px}
-  .hero{
-    background:linear-gradient(135deg,#172554,#2563eb);
-    color:white;border-radius:18px;padding:25px 22px;
-    box-shadow:0 8px 24px rgba(15,23,42,.15);
-    margin-bottom:18px;
-  }
-  .hero h1{margin:0 0 6px;font-size:27px}
-  .hero p{margin:0;opacity:.92}
-  .scorebar{
-    position:sticky;top:0;z-index:5;background:white;
-    border-radius:12px;padding:11px 14px;margin:0 0 18px;
-    box-shadow:0 4px 14px rgba(15,23,42,.09);
-    display:flex;justify-content:space-between;align-items:center;
-    font-weight:700;
-  }
-  .section-title{
-    margin:22px 0 10px;font-size:21px;color:#172554;
-  }
-  .q{
-    background:white;border-radius:14px;padding:17px 18px;margin:12px 0;
-    box-shadow:0 3px 12px rgba(15,23,42,.07);
-    border:1px solid #e5e7eb;
-  }
-  .q h3{font-size:16px;margin:0 0 12px}
-  .option{
-    display:block;margin:8px 0;padding:10px 12px;border:1px solid #dbe3ef;
-    border-radius:10px;cursor:pointer;transition:.15s;background:#fff;
-  }
-  .option:hover{background:#f8fafc;border-color:#94a3b8}
-  .option input{margin-right:9px}
-  .option.correct{border-color:#16a34a;background:#ecfdf3}
-  .option.wrong{border-color:#dc2626;background:#fef2f2}
-  .feedback{display:none;margin-top:9px;font-size:14px;font-weight:600}
-  .feedback.show{display:block}
-  .feedback.correct{color:#15803d}
-  .feedback.wrong{color:#b91c1c}
-  .descriptive{
-    background:#fff;border-left:5px solid #f59e0b;
-    border-radius:12px;padding:15px 17px;margin:11px 0;
-    box-shadow:0 3px 12px rgba(15,23,42,.06);
-  }
-  .marks{
-    float:right;background:#fff7ed;color:#c2410c;
-    border-radius:20px;padding:3px 9px;font-size:12px;font-weight:700;
-  }
-  .desc-note{font-size:13px;color:#64748b;margin-top:7px}
-  .finish{
-    margin:22px 0;padding:17px;background:white;border-radius:14px;
-    text-align:center;box-shadow:0 3px 12px rgba(15,23,42,.07)
-  }
-  button{
-    border:0;background:#2563eb;color:#fff;padding:11px 20px;
-    border-radius:10px;font-weight:700;cursor:pointer
-  }
-  button:hover{background:#1d4ed8}
-  @media(max-width:600px){
-    .wrap{padding:11px}.hero h1{font-size:22px}.q{padding:14px}
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Class X IT 402 digital documentation and electronic spreadsheet notes and quick revision PDFs.">
+  <title>IT 402 | Class X Study Library</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
-  <div class="hero">
-    <h1>Class 10 Information Technology – Skills Quiz</h1>
-    <p>25 MCQs • Instant Correct/Wrong Feedback • Descriptive Questions for Viewing</p>
+  <header class="hero" id="top">
+    <nav class="nav">
+      <a class="brand" href="#top"><span class="brand-mark">IT</span><span>IT 402 <small>CLASS X • 2026–27</small></span></a>
+      <div class="nav-links"><a href="#documentation">Digital Documentation</a><a href="#spreadsheet">Electronic Spreadsheet</a></div>
+    </nav>
+    <div class="hero-inner">
+      <div class="eyebrow">CBSE • INFORMATION TECHNOLOGY (402)</div>
+      <h1>Your Notes.<br><span>Your Revision.</span></h1>
+      <p>Access chapter-wise detailed notes and quick revision PDFs for Class X Information Technology.</p>
+      <a class="hero-btn" href="#documentation">Explore Study Material <span>↓</span></a>
+      <div class="hero-tags"><span>▤ Detailed Notes</span><span>⚡ Quick Revision</span><span>↓ PDF Downloads</span></div>
+    </div>
+    <div class="decor decor-a"></div><div class="decor decor-b"></div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div><span class="kicker">STUDY LIBRARY</span><h2>Choose a subject area</h2><p>Each chapter has two resources: detailed notes and quick revision.</p></div>
+      <div class="search"><span>⌕</span><input id="search" type="search" placeholder="Search chapter or subject..." aria-label="Search chapters"></div>
+    </section>
+
+    <section class="subject-section" id="documentation">
+      <div class="subject-heading">
+        <div class="subject-icon blue">▤</div>
+        <div><span class="subject-number">PART B · UNIT 1</span><h2>Digital Documentation</h2><p>Advanced • LibreOffice Writer</p></div>
+        <span class="count">3 Chapters</span>
+      </div>
+      <div class="chapter-grid" id="documentation-list"></div>
+    </section>
+
+    <section class="subject-section" id="spreadsheet">
+      <div class="subject-heading">
+        <div class="subject-icon green">▦</div>
+        <div><span class="subject-number">PART B · UNIT 2</span><h2>Electronic Spreadsheet</h2><p>Advanced • LibreOffice Calc</p></div>
+        <span class="count">4 Chapters</span>
+      </div>
+      <div class="chapter-grid" id="spreadsheet-list"></div>
+    </section>
+</main>
+
+  <footer><div class="footer-brand">IT 402 <span>•</span> CLASS X</div><p>Information Technology Study Material · Session 2026–27</p><a href="#top">Back to top ↑</a></footer>
+
+  <div class="instruction-overlay" id="instructionPopup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+    <div class="instruction-modal">
+      <div class="popup-icon">📘</div>
+      <button class="popup-close" id="closePopup" aria-label="Close instructions">×</button>
+      <span class="popup-kicker">PLEASE READ BEFORE STUDYING</span>
+      <h2 id="popupTitle">How to Use Your Study Material</h2>
+      <p class="popup-intro">This website contains study material for two units of Class X IT (402):</p>
+      <div class="popup-unit"><span>01</span><div><strong>Digital Documentation</strong><small>Advanced • LibreOffice Writer</small></div></div>
+      <div class="popup-unit"><span>02</span><div><strong>Electronic Spreadsheet</strong><small>Advanced • LibreOffice Calc</small></div></div>
+      <ul class="popup-rules">
+        <li>Each chapter has <strong>Detailed Notes</strong> and a <strong>Quick Revision</strong> version.</li>
+        <li>Write the <strong>Quick Revision</strong> content in your notebook.</li>
+        <li>If CBSE questions are included at the end of a Quick Revision PDF, <strong>do not write those questions</strong> in your notebook.</li>
+      </ul>
+      <button class="popup-continue" id="continueButton">Got it — Continue <span>→</span></button>
+    </div>
   </div>
 
-  <div class="scorebar">
-    <span>MCQ Progress</span>
-    <span id="score">0 / 25</span>
-  </div>
-
-  <h2 class="section-title">Section A – Multiple Choice Questions</h2>
-  <div id="quiz"></div>
-
-  <h2 class="section-title">Section B – Descriptive Questions</h2>
-  <div class="descriptive"><span class="marks">2 Marks</span><b>1.</b> What is ICT? Write any two advantages of ICT.</div>
-  <div class="descriptive"><span class="marks">2 Marks</span><b>2.</b> What is feedback in communication skills? Write any two qualities of good feedback.</div>
-  <div class="descriptive"><span class="marks">3 Marks</span><b>3.</b> Explain any three types of non-verbal communication with suitable examples.</div>
-  <div class="descriptive"><span class="marks">2 Marks</span><b>4.</b> What is self-motivation? Explain the two types of self-motivation.</div>
-  <div class="descriptive"><span class="marks">3 Marks</span><b>5.</b> What is stress management? Write any two stress-management techniques and explain them briefly.</div>
-  <div class="descriptive"><span class="marks">3 Marks</span><b>6.</b> What is time management? Explain the role of prioritization in managing time effectively.</div>
-  <div class="descriptive"><span class="marks">2 Marks</span><b>7.</b> What is a style in LibreOffice Writer? Why are styles useful in a document?</div>
-  <div class="descriptive"><span class="marks">3 Marks</span><b>8.</b> Explain the difference between hardware and software with suitable examples.</div>
-
-  <div class="finish">
-    <b>Quiz completed!</b><br>
-    <span id="finalText">Answer the MCQs above to see your score.</span>
-    <br><br>
-    <button onclick="resetQuiz()">Reset Quiz</button>
-  </div>
-</div>
-
-<script>
-const questions = [
-  {
-    q:"1. What is the primary purpose of using styles in LibreOffice Writer?",
-    options:["To change the font color","To create a table of contents","To maintain consistent formatting throughout a document","To insert images"],
-    answer:2
-  },
-  {
-    q:"2. Which style type is used to control the layout of an entire page in Writer?",
-    options:["Paragraph style","Character style","Page style","Frame style"],
-    answer:2
-  },
-  {
-    q:"3. A named collection of various formatting features is known as a:",
-    options:["Group","Format Group","Outlook","Style"],
-    answer:3
-  },
-  {
-    q:"4. Which of the following is NOT a legal type of style in Writer?",
-    options:["Paragraph style","Line style","Page style","List style"],
-    answer:1
-  },
-  {
-    q:"5. Character styles affect a:",
-    options:["Whole paragraph","Whole page","Group of characters","Group of lines"],
-    answer:2
-  },
-  {
-    q:"6. The inner urge to do something and achieve goals without external pressure or lure for reward is called:",
-    options:["Self-awareness","Self-motivation","Self-regulation","Self-control"],
-    answer:1
-  },
-  {
-    q:"7. Which is an example of intrinsic self-motivation?",
-    options:["Promotion","Punishment","Joy","Fear"],
-    answer:2
-  },
-  {
-    q:"8. Which is an example of extrinsic self-motivation?",
-    options:["Joy","Personal satisfaction","Promotion","Interest in learning"],
-    answer:2
-  },
-  {
-    q:"9. A good self-motivated person is likely to be:",
-    options:["Dedicated","Unaware of goals","Dependent on rewards for every task","Unwilling to take responsibility"],
-    answer:0
-  },
-  {
-    q:"10. Which of the following is a suitable stress-management practice?",
-    options:["Meditation","Ignoring every problem","Avoiding all physical activity","Skipping sleep"],
-    answer:0
-  },
-  {
-    q:"11. Stress that is a limited quantity and helps one keep focus and strive for success is called:",
-    options:["Eustress","Distress","Toxic stress","Bad stress"],
-    answer:0
-  },
-  {
-    q:"12. Ongoing stress that increases pressure and hinders thinking and working routine is called:",
-    options:["Eustress","Distress","Inspiration","Motivation"],
-    answer:1
-  },
-  {
-    q:"13. Which practice involves focusing the mind on a particular object, thought or activity to achieve a calm mental state?",
-    options:["Communication","Meditation","Recreation","Scheduling"],
-    answer:1
-  },
-  {
-    q:"14. Understanding and handling emotions is called:",
-    options:["Physical intelligence","Mental intelligence","Emotional intelligence","Regular intelligence"],
-    answer:2
-  },
-  {
-    q:"15. Which hormone is released by the body during increased stress levels?",
-    options:["Adrenaline","Insulin","Melatonin","Growth hormone"],
-    answer:0
-  },
-  {
-    q:"16. Which of the following is NOT a scheduling method?",
-    options:["Diary","Time tables","To-do lists","Social media"],
-    answer:3
-  },
-  {
-    q:"17. Which statement about time management is true?",
-    options:["Time management always means doing more than one task at the same time.","Good time management means never taking breaks.","Time management is about planning to get tasks done and doing them.","Time management means ignoring deadlines."],
-    answer:2
-  },
-  {
-    q:"18. To spend your time productively, you need to have set some:",
-    options:["Possibilities","Ideas","Boundaries","Goals"],
-    answer:3
-  },
-  {
-    q:"19. Which is a good time-management strategy?",
-    options:["Forgetting deadlines","Doing only tasks you remember","Thinking about consequences when prioritizing tasks","Keeping your phone next to you while studying"],
-    answer:2
-  },
-  {
-    q:"20. The time by which something must be completed is called a:",
-    options:["Chore","Consequence","Deadline","Goal"],
-    answer:2
-  },
-  {
-    q:"21. What does ICT stand for?",
-    options:["Information and Communication Technology","Internet and Computer Training","Information Control Technique","Integrated Communication Tool"],
-    answer:0
-  },
-  {
-    q:"22. Which of the following is a physical part of a computer system?",
-    options:["Software","Program","Keyboard","Presentation"],
-    answer:2
-  },
-  {
-    q:"23. Which key is used to open the Start menu?",
-    options:["Enter key","Windows key","Delete key","Page Up key"],
-    answer:1
-  },
-  {
-    q:"24. Which of the following is a type of non-verbal communication?",
-    options:["Facial expressions","Written paragraph","Email","Report writing"],
-    answer:0
-  },
-  {
-    q:"25. Which of the following is one of the 7 Cs of effective communication?",
-    options:["Confusing","Concise","Casual","Careless"],
-    answer:1
-  }
-];
-
-const quiz = document.getElementById("quiz");
-const scoreEl = document.getElementById("score");
-const finalText = document.getElementById("finalText");
-let answered = new Array(questions.length).fill(false);
-let score = 0;
-
-function render(){
-  quiz.innerHTML = "";
-  questions.forEach((item,i)=>{
-    const box=document.createElement("div");
-    box.className="q";
-    const h=document.createElement("h3");
-    h.textContent=item.q;
-    box.appendChild(h);
-
-    item.options.forEach((opt,j)=>{
-      const label=document.createElement("label");
-      label.className="option";
-      label.innerHTML=`<input type="radio" name="q${i}" value="${j}"> ${String.fromCharCode(65+j)}. ${opt}`;
-      label.addEventListener("click",()=>choose(i,j,box));
-      box.appendChild(label);
-    });
-
-    const fb=document.createElement("div");
-    fb.className="feedback";
-    fb.id=`fb${i}`;
-    box.appendChild(fb);
-    quiz.appendChild(box);
-  });
-}
-
-function choose(i,j,box){
-  if(answered[i]) return;
-  answered[i]=true;
-  const labels=box.querySelectorAll(".option");
-  labels.forEach((lab,k)=>{
-    lab.style.cursor="default";
-    const input=lab.querySelector("input");
-    input.disabled=true;
-    if(k===questions[i].answer) lab.classList.add("correct");
-  });
-
-  const fb=document.getElementById(`fb${i}`);
-  if(j===questions[i].answer){
-    score++;
-    fb.textContent="✓ Correct answer";
-    fb.className="feedback show correct";
-  }else{
-    labels[j].classList.add("wrong");
-    fb.textContent="✗ Wrong answer — the correct option is highlighted in green.";
-    fb.className="feedback show wrong";
-  }
-  scoreEl.textContent=`${score} / 25`;
-  if(answered.every(Boolean)){
-    finalText.textContent=`You scored ${score} out of 25.`;
-  }
-}
-
-function resetQuiz(){
-  answered=new Array(questions.length).fill(false);
-  score=0;
-  scoreEl.textContent="0 / 25";
-  finalText.textContent="Answer the MCQs above to see your score.";
-  render();
-  window.scrollTo({top:0,behavior:"smooth"});
-}
-render();
-</script>
+  <script src="script.js"></script>
 </body>
 </html>
